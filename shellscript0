@@ -1,0 +1,5 @@
+echo "testinng shell prog"
+figlet "going right"
+echo "current processes are"
+top
+q

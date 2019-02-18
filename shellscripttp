@@ -1,0 +1,10 @@
+a=$1
+b=$2
+c=$3
+if test $((a+b)) -gt $3 -a $((b+c)) -gt $1
+then
+echo "pos"
+else
+echo "neg"
+fi
+

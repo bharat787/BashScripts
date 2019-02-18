@@ -1,0 +1,6 @@
+qecho enter num a
+read a
+echo enter num b
+read b
+echo `expr $a + $b`
+cat>filetemp $a$b

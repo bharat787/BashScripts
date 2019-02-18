@@ -1,0 +1,7 @@
+read a
+read b
+c=$((a\*a+b\*b))
+echo $c
+d=$1
+sum=$((d+c))
+echo $sum

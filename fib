@@ -1,0 +1,17 @@
+first=1
+second=1
+next=0
+echo how many fib numbers
+read num
+
+echo $first
+echo $second
+
+while [ $num -ge 2 ]
+do
+	next=$((first + second))
+	echo $next
+	first=$second	
+	second=$next
+	num=$((num - 1))
+done

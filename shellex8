@@ -1,0 +1,9 @@
+echo "enter rad"
+read rad
+if test $rad -gt 5
+then
+	area=$((3\*rad\*rad))
+	circum=$((2\*3\*rad))
+	echo $area
+	echo $circum
+fi

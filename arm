@@ -1,0 +1,31 @@
+echo enter a num
+read num
+
+al=$num
+t=$num
+sum=0
+ctr=0
+
+while [ $t -gt 0 ]
+do
+	ctr=$((ctr + 1))
+	t=$((t / 10))
+done
+
+echo $ctr
+echo
+
+while [ $num -gt 0 ]
+do
+	rem=$((num % 10))
+	sum=$((sum + rem ** ctr))
+	num=$((num / 10))
+done
+
+echo sum is $sum
+if [ $al -eq $sum ]
+then
+	echo arm
+else
+	echo not arm
+fi
